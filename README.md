@@ -3,6 +3,7 @@
 ## Overview
 This project implements an email spam classifier using a supervised machine learning approach based on the Naive Bayes algorithm. Emails are classified as Spam (1) or Not Spam (0) using word frequency information extracted from the email text.
 The implementation follows the design and sample code provided for CA02 and includes additional refactoring for clarity and efficiency.
+
 ---
 
 ## Dataset Structure 
@@ -12,6 +13,7 @@ The dataset is organized into two folders located in the same directory as the n
 Emails in each folder are randomly mixed.
 Spam emails can be identified by file names that begin with spmsg.
 Non-spam emails follow a numeric naming convention.
+
 ---
 
 ## Approach
@@ -25,13 +27,15 @@ High-Level Steps:
 5. Assign labels using file name conventions.
 6. Train a **Multinomial Naive Bayes** classifier.
 7. Evaluate performance on the test dataset using **classification accuracy**.
+   
 ---
 
 ## Files Included
 - **CA02_NB_assignment.ipynb** – Main notebook containing the implementation and explanations  
 - **README.md** – Project overview and execution instructions  
 - **train-mails/** – Training email dataset  
-- **test-mails/** – Testing email dataset  
+- **test-mails/** – Testing email dataset
+
 ---
 
 ## How to Run
@@ -39,6 +43,7 @@ High-Level Steps:
 2. Open `CA02_NB_assignment.ipynb`.
 3. Run all cells from top to bottom.
 4. The final cell will print the classification accuracy on the test dataset.
+
 ---
 
 ## Notes
@@ -48,7 +53,8 @@ High-Level Steps:
   - Vocabulary creation  
   - Feature extraction  
   - Model training  
-  - Model evaluation  
+  - Model evaluation
+ 
 ---
 
 ## Authors
