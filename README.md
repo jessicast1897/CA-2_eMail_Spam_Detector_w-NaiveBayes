@@ -48,5 +48,5 @@ The solution uses a **Bag-of-Words** representation to convert emails into numer
 
 ---
 
-## Author
+## Authors
 **Jessica Shono Thai and Bhavna Sreekumar 
