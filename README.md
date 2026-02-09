@@ -5,7 +5,7 @@ This project implements an email spam classifier using a supervised machine lear
 The implementation follows the design and sample code provided for CA02 and includes additional refactoring for clarity and efficiency.
 ---
 
-## Dataset Structure
+## Dataset Structure 
 The dataset is organized into two folders located in the same directory as the notebook:
 ./train-mails
 ./test-mails
@@ -25,7 +25,6 @@ High-Level Steps:
 5. Assign labels using file name conventions.
 6. Train a **Multinomial Naive Bayes** classifier.
 7. Evaluate performance on the test dataset using **classification accuracy**.
-
 ---
 
 ## Files Included
