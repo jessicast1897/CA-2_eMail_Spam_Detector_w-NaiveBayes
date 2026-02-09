@@ -1,16 +1,23 @@
-# CA-2_Spam_Email_Detector
-using a set of emails to train a learning model to detect spam email. 
+# CA02 – Email Spam Classification using Naive Bayes
 
-- Emails in each folder are randomly mixed.
-- **Spam emails** are identified by file names that begin with `spmsg`.
-- **Non-spam emails** follow a numeric naming convention.
+## Overview
+This project implements an email spam classifier using a supervised machine learning approach based on the Naive Bayes algorithm. Emails are classified as Spam (1) or Not Spam (0) using word frequency information extracted from the email text.
+The implementation follows the design and sample code provided for CA02 and includes additional refactoring for clarity and efficiency.
+---
 
+## Dataset Structure
+The dataset is organized into two folders located in the same directory as the notebook:
+./train-mails
+./test-mails
+Emails in each folder are randomly mixed.
+Spam emails can be identified by file names that begin with spmsg.
+Non-spam emails follow a numeric naming convention.
 ---
 
 ## Approach
 The solution uses a **Bag-of-Words** representation to convert emails into numerical feature vectors.
 
-### High-Level Steps
+High-Level Steps:
 1. Read and preprocess all training emails.
 2. Remove non-alphabetic tokens and single-character words.
 3. Build a vocabulary using the **3000 most frequent words** from the training set.
@@ -26,7 +33,6 @@ The solution uses a **Bag-of-Words** representation to convert emails into numer
 - **README.md** – Project overview and execution instructions  
 - **train-mails/** – Training email dataset  
 - **test-mails/** – Testing email dataset  
-
 ---
 
 ## How to Run
@@ -34,7 +40,6 @@ The solution uses a **Bag-of-Words** representation to convert emails into numer
 2. Open `CA02_NB_assignment.ipynb`.
 3. Run all cells from top to bottom.
 4. The final cell will print the classification accuracy on the test dataset.
-
 ---
 
 ## Notes
@@ -45,7 +50,6 @@ The solution uses a **Bag-of-Words** representation to convert emails into numer
   - Feature extraction  
   - Model training  
   - Model evaluation  
-
 ---
 
 ## Authors
