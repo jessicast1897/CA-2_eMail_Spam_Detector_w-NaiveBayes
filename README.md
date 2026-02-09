@@ -1,25 +1,27 @@
 # CA02 – Email Spam Classification using Naive Bayes
 
 ## Overview
-This project implements an email spam classifier using a supervised machine learning approach based on the Naive Bayes algorithm. Emails are classified as Spam (1) or Not Spam (0) using word frequency information extracted from the email text.
-The implementation follows the design and sample code provided for CA02 and includes additional refactoring for clarity and efficiency.
+This project implements an email spam classifier using a supervised machine learning approach based on the Naive Bayes algorithm. Emails are classified as **Spam (1)** or **Not Spam (0)** using word frequency information extracted from the email text.
+
+The implementation follows the design and sample code provided for CA02, with minor refactoring for clarity, efficiency, and organization.
 
 ---
 
-## Dataset Structure 
+## Dataset Structure
 The dataset is organized into two folders located in the same directory as the notebook:
-./train-mails
-./test-mails
-Emails in each folder are randomly mixed.
-Spam emails can be identified by file names that begin with spmsg.
-Non-spam emails follow a numeric naming convention.
+
+- `train-mails/`
+- `test-mails/`
+
+Emails in each folder are randomly mixed.  
+Spam emails can be identified by file names that begin with **`spmsg`**, while non-spam emails follow a numeric naming convention.
 
 ---
 
 ## Approach
 The solution uses a **Bag-of-Words** representation to convert emails into numerical feature vectors.
 
-High-Level Steps:
+High-level steps:
 1. Read and preprocess all training emails.
 2. Remove non-alphabetic tokens and single-character words.
 3. Build a vocabulary using the **3000 most frequent words** from the training set.
@@ -27,14 +29,25 @@ High-Level Steps:
 5. Assign labels using file name conventions.
 6. Train a **Multinomial Naive Bayes** classifier.
 7. Evaluate performance on the test dataset using **classification accuracy**.
-   
+
+---
+
+## Requirements
+To run this project, the following are required:
+
+- Python 3.x  
+- NumPy  
+- scikit-learn  
+
+The project was developed using standard Python data science libraries.
+
 ---
 
 ## Files Included
 - **CA02_NB_assignment.ipynb** – Main notebook containing the implementation and explanations  
-- **README.md** – Project overview and execution instructions  
+- **README.md** – Project overview and usage instructions  
 - **train-mails/** – Training email dataset  
-- **test-mails/** – Testing email dataset
+- **test-mails/** – Testing email dataset  
 
 ---
 
@@ -42,20 +55,26 @@ High-Level Steps:
 1. Place the notebook and the `train-mails` and `test-mails` folders in the same directory.
 2. Open `CA02_NB_assignment.ipynb`.
 3. Run all cells from top to bottom.
-4. The final cell will print the classification accuracy on the test dataset.
+4. The final cell will display the classification accuracy on the test dataset.
 
 ---
 
 ## Notes
 - The model uses **word count features** and does not consider word order or semantic context.
-- **Accuracy** is reported as the primary evaluation metric.
+- **Accuracy** is used as the primary evaluation metric.
 - The implementation is modularized to separate:
   - Vocabulary creation  
   - Feature extraction  
   - Model training  
-  - Model evaluation
- 
+  - Model evaluation  
+
+---
+
+## Acknowledgements
+This project is based on the sample design and guidelines provided as part of the CA02 course materials. The overall approach follows the recommended structure, with minor modifications made for clarity and efficiency.
+
 ---
 
 ## Authors
-**Jessica Shono Thai and Bhavna Sreekumar**
+**Jessica Shono Thai**  
+**Bhavna Sreekumar**
